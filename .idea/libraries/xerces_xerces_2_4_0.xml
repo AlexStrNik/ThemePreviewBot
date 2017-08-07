@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="xerces:xerces:2.4.0" type="repository">
+    <properties maven-id="xerces:xerces:2.4.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/xercesImpl-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
