@@ -1,14 +1,9 @@
 package main.java;
 
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-
 import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
+import java.net.URL;
 import java.util.*;
 
 /**
@@ -17,7 +12,8 @@ import java.util.*;
 public class ThemeParser {
     public static Theme Default;
     public static void inicialize(){
-        File f = new File(PreviewParser.class.getResource("default_theme.attheme").getPath());
+        URL z = ThemeParser.class.getResource("default.attheme");
+        File f = new File(z.getPath());
         try {
             Default = parser(f);
         } catch (Exception e) {

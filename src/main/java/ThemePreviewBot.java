@@ -16,7 +16,6 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.RenderedImage;
 import java.io.File;
-import java.io.IOException;
 
 /**
  * Created by Никита on 04.08.2017.
