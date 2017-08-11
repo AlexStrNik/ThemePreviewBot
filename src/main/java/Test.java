@@ -1,5 +1,6 @@
 package main.java;
-
+import java.net.URL;
+import java.net.URLClassLoader;
 /**
  * Created by Никита on 07.08.2017.
  */
@@ -269,5 +270,16 @@ public class Test {
                 "chat_muteIcon=-7516609\n" +
                 "chat_messagePanelCancelInlineBot=-4422024\n";
         System.out.println(z.replace("\n",";"));
+    }
+}
+
+
+class ClassLoaderDisplay {
+
+    public static void main(String args[]) {
+        URL[] urls = ((URLClassLoader) ClassLoader.getSystemClassLoader()).getURLs();
+        for (URL url : urls) {
+            System.out.println(url);
+        }
     }
 }
